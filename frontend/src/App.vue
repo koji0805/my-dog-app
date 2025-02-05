@@ -26,7 +26,7 @@ export default {
   methods: {
     async logout() {
       try {
-        await axios.post('http://localhost:5001/api/users/logout');
+        await axios.post('http://153.120.121.157:30034/api/users/logout');
         localStorage.removeItem('token');
         this.isLoggedIn = false;
         this.$router.push('/login');

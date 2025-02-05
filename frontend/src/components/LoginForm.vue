@@ -35,7 +35,7 @@
             username: !this.identifier.includes('@') ? this.identifier : '',
             password: this.password
           };
-          const res = await axios.post('http://localhost:5001/api/users/login', payload);
+          const res = await axios.post('http://153.120.121.157:30034/api/users/login', payload);
           this.message = res.data.message;
           // JWTトークンを保存 (ローカルストレージなど)
           localStorage.setItem('token', res.data.token);
