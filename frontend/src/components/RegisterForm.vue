@@ -40,7 +40,7 @@
             email: this.email,
             password: this.password
           };
-          const res = await axios.post('http://localhost:5000/api/users/register', payload);
+          const res = await axios.post('http://localhost:5001/api/users/register', payload);
           this.message = res.data.message;
           // 登録が成功したらログイン画面へ移動など
           this.$router.push('/login');

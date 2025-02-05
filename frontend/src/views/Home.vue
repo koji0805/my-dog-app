@@ -26,7 +26,7 @@
           // const res = await axios.get('https://dog.ceo/api/breeds/image/random');
   
           // バックエンド経由の場合
-          const res = await axios.get('http://localhost:5000/api/dog-image');
+          const res = await axios.get('http://localhost:5001/api/dog-image');
           this.dogImage = res.data.message;
         } catch (err) {
           console.error(err);
